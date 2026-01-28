@@ -1,0 +1,77 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("./radha.webp");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+}
+
+.card{
+  width:90%;
+  max-width:450px;
+  background:rgba(255,255,255,0.1);
+  backdrop-filter:blur(12px);
+  padding:35px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 0 30px rgba(0,0,0,0.6);
+  animation:fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:none;}
+}
+
+h1{
+  color:#ff9acb;
+  margin-bottom:15px;
+}
+
+p{
+  font-size:1.05rem;
+  line-height:1.6;
+  margin-top:12px;
+}
+
+button{
+  margin-top:25px;
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+  background:#ff9acb;
+  color:black;
+  font-size:1rem;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px #ff9acb;
+}
+
+#hiddenText{
+  display:none;
+  margin-top:20px;
+  animation:fadeIn 1s ease;
+}
+
+canvas{
+  position:fixed;
+  top:0;
+  left:0;
+  pointer-events:none;
+}
