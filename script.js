@@ -58,3 +58,9 @@ function animateLotus(){
 }
 
 animateLotus();
+
+// RESIZE SUPPORT
+window.addEventListener("resize", ()=>{
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
